@@ -3,25 +3,35 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Abrir + Sans: ital @ 1 & display = swap "rel =" stylesheet ">
+
+    <style>
+      .fonte{
+        font-family:'Open Sans', sans-serif;
+      }
+     
+    </style>
   </head>
   <body>
-    <img id="foto" src="duda.jpeg" alt="A foto mostra a Eduarda" width="200px" height="300px">
-    <h1>Eduarda Wiltiner Reis Santana</h1>
+    <img id="foto" src="duda.jpeg" alt="A foto mostra a Eduarda" >
+    <h1 >Eduarda Wiltiner Reis Santana</h1>
     <!-- Portifólio Web  -->
     <h1>Hello World!</h1>
 
     <h3><em>"Qualquer Tecnologia suficientemente avançada é indistifuível da magia"</em></h3>
 
     <h2>Sumário</h2>
-    <ul>
-      <li><a href="#Sobre">Sobre mim?</a></li>
-      <li><a href="#Habilidades">Habilidades</a></li>
-      <li><a href="https://blog.betrybe.com/" target="_blank" >Um Blog Interessante</a></li>
+    <ul class="listas">
+      <li><a class="button" href="#Sobre">Sobre mim?</a></li>
+      <li><a class="button" href="#Habilidades">Habilidades</a></li>
+      <li><a class="button" href="https://blog.betrybe.com/" target="_blank" >Um Blog Interessante</a></li>
     </ul>
 
     <h2 id="Sobre" ><strong>Sobre mim?</strong></h2>
 
-    <p>🚀Vamos lá. Quero que você viaje comigo para o interior do estado da <strong>Bahia no Brasil</strong>, para um quarto de uma jovem estudante da Universidade de São Paulo, em plena pandemia no ano de 2020. 
+    <p id="sobre">🚀Vamos lá. Quero que você viaje comigo para o interior do estado da <strong>Bahia no Brasil</strong>, para um quarto de uma jovem estudante da Universidade de São Paulo, em plena pandemia no ano de 2020. 
 
     <br><br>Bom, logo quando você entra no quarto, a primeira impressão é que ela está discutindo com a sua irmã. Ela levanta da cama, gesticula e fala tão alto que até seus pais que estão no primeiro andar conseguem ouvi-la. E então, você percebe que ,na verdade, ela está transbordando de emoção. Ela acabara de ler metade do livro do Steve Jobs e percebeu que para gerar um grande impacto no universo da tecnologia, precisava deixar de ser uma “Steve Wozniak”. Eu estava começando a acreditar que tinha uma chance e estava ansiosa para o futuro.
   
@@ -32,17 +42,17 @@
     <br>E para me ver em ação, só precisa me acompanhar...😉
     </p> 
 
-    <p><a href="#foto">Voltar para a foto</a></p>
+    <p><a class="button" href="#foto">Voltar para a foto</a></p>
 
     <h2 id="Habilidades" ><strong>Lista de Habilidades</strong></h2>
-    <ul>
-      <li><strong>Programadora</strong></li>
-      <li>Gestora</li>
-      <li>Criativa</li>
-      <li>Escritora</li>
-      <li><strong>Exploradora de conhecimento</strong></li>
-      <li>Proativa</li>
-      <li><strong>Líder</strong></li>
+    <ul class="listas">
+      <li class="destaque"><strong>Programadora</strong></li>
+      <li class="n_destaque">Gestora</li>
+      <li class="n_destaque">Criativa</li>
+      <li class="n_destaque">Escritora</li>
+      <li class="destaque"><strong>Exploradora de conhecimento</strong></li>
+      <li class="n_destaque">Proativa</li>
+      <li class="destaque"><strong>Líder</strong></li>
     </ul>
 
   
