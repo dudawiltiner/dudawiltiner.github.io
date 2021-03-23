@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HortiFruti</title>
+    <link rel="sorfcut icon" href="imagens/apple.ico"  type="image/x-icon">
+    <link rel="stylesheet" href="bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="stylecompra.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="compra.js"></script>
+</head>
+<body>
+  <nav class="navbar is-fixed-top">
+    <div class="container">
+
+      <div class="navbar-brand">
+        <div id="logo">
+          <img  id="image-logo" src="imagens/logo-header.svg">
+        </div>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="Home.html">
+            <span class="icon">
+              <ion-icon name="home"></ion-icon>
+            </span>
+            <span>Home</span>
+          </a>
+          <a class="navbar-item" href="#home">
+            <span class="icon">
+              <ion-icon name="cart"></ion-icon>
+            </span>
+            <span>Compre</span>
+          </a>
+          <a class="navbar-item" href="#doe">
+            <span class="icon">
+              <ion-icon name="heart-half"></ion-icon>
+            </span>
+            <span>Doe</span>
+          </a>
+          <a class="navbar-item" href="#contato">
+            <span class="icon">
+              <ion-icon name="chatbubbles"></ion-icon>
+            </span>
+            <span>Contato</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <section id="home" class="hero is-link is-fullheight">
+    <div class="hero-body">
+      <div class="card">
+        <div class="card-content">
+          <p class="content">
+            Ótimo! Você está à alguns passos de ter uma vida mais saudável nessa quarentena.
+            <img src="imagens/decoration.svg" alt="flecha decorativa">
+            <button class="button is-white" >
+              <a  href="#compre">
+                <span>Compre</span>
+              </a>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="compre" class="section">
+    <div class="content">
+      <h2 class="h-content">
+        Monte a sua cesta
+        <img src="imagens/decoration.svg" alt="" width="200">
+        <br>
+        <p class="p-compre">
+          Inicie a sua compra montando a sua cesta com o que há de mais delicioso e saudável!
+          <br>
+        </p>
+      </h2>
+      <br>
+      <br>
+    </div>
+      <div class="container-depoi">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <div class='round'>
+              <input onclick='quant(value,id)' value="maçafu1" type="checkbox" id="maçafu" />
+              <label for="maçafu"></label>
+            </div>
+            <img class="img-depoi" src="imagens/maça.png" width="150">
+            <p id='maçafu5' class="title is-5">Maçã Fuji</p>
+            <div class="content">
+              <p class='textpre'> R$ <a class='textpre' id='maçafu6' >2.68</a> / un </p>
+            </div>
+            <div id="maçafu1"></div>
+          </article>
+        </div>
+        <div class="tile is-parent" >
+          <article class=" is-child box" >
+            <div class='round'>
+              <input onclick='quant(value,id)' value="banica1" type="checkbox" id="banica" />
+              <label for="banica" ></label>
+            </div>
+            <img class="img-depoi" src="imagens/banana.png" width="150">
+            <br>
+            <p id="banica5" class="title is-5">Banana Nanica</p>
+            <div class="content">
+              <p class='textpre'> R$ <a class='textpre' id='banica6' >14.68</a> / dúzia </p>
+            </div>
+            <div id="banica1"></div>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class=" is-child box" >
+            <div class='round'>
+              <input type="checkbox" id="abacav" onclick='quant(value,id)' value="abacav1"  />
+              <label for="abacav" ></label>
+            </div>
+            <img class="img-depoi" src="imagens/abacate.png" width="150">
+            <br>
+            <p  id="abacav5" class="title is-5">Abacate Avocado</p>
+            <div class="content">
+              <p  class='textpre' > R$ <a class='textpre' id='abacav6' >8.73</a> / un </p>
+            </div>
+            <div id="abacav1" ></div>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class=" is-child box" >
+            <div class='round'>
+              <input onclick='quant(value,id)' value="alfaceam1" type="checkbox" id="alfaceam" />
+              <label for="alfaceam" ></label>
+            </div>
+            <img class="img-depoi" src="imagens/alface.png" width="150">
+            <br>
+            <p id="alfaceam5" class="title is-5">Alface Americano</p>
+            <div class="content">
+              <p class='textpre'> R$ <a class='textpre' id='alfaceam6' >7.90</a> / un </p>
+            </div>
+            <div id="alfaceam1" ></div>
+          </article>
+        </div>
+
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <div class='round'>
+              <input onclick='quant(value,id)' value="beri1" type="checkbox" id="beri" />
+              <label for="beri"></label>
+            </div>
+            <img class="img-depoi" src="imagens/beringela.png" width="150">
+            <p id='beri5' class="title is-5">Beringela</p>
+            <div class="content">
+              <p class='textpre'> R$ <a class='textpre' id='beri6' >3.50</a> / un </p>
+            </div>
+            <div id="beri1"></div>
+          </article>
+        </div>
+        <div class="tile is-parent" >
+          <article class=" is-child box" >
+            <div class='round'>
+              <input onclick='quant(value,id)' value="abacaxi1" type="checkbox" id="abacaxi" />
+              <label for="abacaxi" ></label>
+            </div>
+            <img class="img-depoi" src="imagens/abacaxi.png" width="150">
+            <br>
+            <p id="abacaxi5" class="title is-5">Abacaxi</p>
+            <div class="content">
+              <p class='textpre'> R$ <a class='textpre' id='abacaxi6' >6.30</a> / un </p>
+            </div>
+            <div id="abacaxi1" ></div>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class=" is-child box" >
+            <div class='round'>
+              <input type="checkbox" id="abo" onclick='quant(value,id)' value="abo1"  />
+              <label for="abo" ></label>
+            </div>
+            <img class="img-depoi" src="imagens/abobora.png" width="150">
+            <br>
+            <p  id="abo5" class="title is-5">Abóbora</p>
+            <div class="content">
+              <p  class='textpre' > R$ <a class='textpre' id='abo6' >7.74</a> / un </p>
+            </div>
+            <div id="abo1" ></div>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class=" is-child box" >
+            <div class='round'>
+              <input onclick='quant(value,id)' value="mora1" type="checkbox" id="mora" />
+              <label for="mora" ></label>
+            </div>
+            <img class="img-depoi" src="imagens/morango.png" width="150">
+            <br>
+            <p id="mora5" class="title is-5">Morango</p>
+            <div class="content">
+              <p class='textpre'> R$ <a class='textpre' id='mora6' >12.00</a> / dúzia </p>
+            </div>
+            <div id="mora1" ></div>
+          </article>
+        </div>
+        </div>
+  </section>
+  <br>
+  <br>
+  <section id="sobre" class="section1">
+    <div class="content">
+      <h2 class="h-content">
+        Sua Cesta
+        <br>
+        <br>
+        <img src="imagens/cesta.png" alt="icone de compra" width="70">
+      </h2>
+      <br>
+      
+      <table class="table tabsd">
+        <thead>
+          <tr class='titab'>
+            <th><p title="Item">Item</p></th>
+            <th><p title="Preço">Preço (R$)</p></th>
+            <th><p title="Quantidade">Qtd</p></th>
+            <th><p title="Subtotal">Subtotal (R$)</p></th>
+          </tr>
+        </thead>
+        
+        <tfoot >
+          <tr class="tot" >
+            <th ><p class="to" >Total</p></th>
+            <th ><p class="to" id="fi" >R$ 0.00</p></th> 
+          </tr>
+        </tfoot>
+        <tbody id="tabss">
+          
+        </tbody>
+        </table>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <section id="sobre" class="section">
+      <div class="content">
+        <h2 class="h-content">
+          Finalizar o pedido
+          <img src="imagens/decoration2.png" alt="" width="100">
+          <br>
+          
+        </h2>
+        <p class="p-content">
+    
+          Obs: a taxa de entrega será passada na efetivação da compra pelo Whatsapp.
+          <br>
+          <br>
+          Por favor, pedimos para que preencha o seu nome abaixo antes de enviar o pedido.
+          <br>
+          <br>
+  
+        </p>
+        <div class="ajiu">
+        <label class="ajula" for="nome">Nome
+          <input onclick="inr()" value="" id="nome" class="input is-danger input2" type="text" placeholder="digite o seu nome">
+        </label>
+        <p class="aler" id="alert"></p>
+        </div>
+        <div class="ajiu">
+        <label class="ajula" for="ender">Endereço
+          <input onclick="iny()" value="" id="ender" class="input is-danger input2" type="text" placeholder="digite o seu nome">
+        </label>
+        <p class="aler" id="ale"></p>
+       </div>
+        <img onclick="envia()" id="claimg" src="imagens/Logo 2 PNG.png" alt="maçã com a logo do whatsaap" width="70">
+        <br>
+    </section>
+  
+    <section id="doe" class="section">
+      <div class="content">
+        <h2 class="h-content">
+          Doe
+          <img src="imagens/decoration2.png" alt="" width="100">
+        </h2>
+        <br>
+        <p class="content2">
+          Já pensou em fazer alguma doação e ajudar a vida de uma pessoa?<br>Clique na maçã!😉🍎
+        </p>
+        <br>
+        <div class="p-content">
+          <div id="texto-doar">
+            <p class="content1">
+              DOE UMA QUANTIA PARA AJUDAR AS PESSOAS QUE PRECISAM!
+            </p>
+          </div>
+          <br>
+          <div id="img">
+            <img id="image-doe-apple" src="imagens/apple.svg" onclick="doar()" alt="">
+            <img src="imagens/doe-maos.svg">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <footer class="footer">
+      <div class="footer-1">
+        <img id="footer-vaso" src="imagens/footer-vaso.svg">
+        <div id="contato">
+          <img class="contact" src="imagens/contato1.svg" onclick="insta()" >
+          <img class="contact" src="imagens/contato2.svg" onclick="whats()" > 
+        </div>
+      </div>
+      <div id="footer-logo">
+        <img  id="image-logo" src="imagens/logo-footer.svg">
+        <p>
+          COM DETERMINAÇÃO, VAMOS LONGE! \o/ |🍎| HORTFRUIT.COM.BR      
+        </p>
+        <br>
+        <p>
+          SALVADOR - BA     
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

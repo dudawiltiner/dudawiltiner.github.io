@@ -1,53 +1,331 @@
-#foto{
-    border-radius: 50px 0px 50px 0px; 
-    width: 200px; 
-    height: 260px;
+
+
+.hero-body{
+    background-image: url("imagens/Imageminicial.png");
+    background-size: cover;
+}
+
+#logo{
+    margin-top: 5px;
+    margin-left: 5px;
+    max-width: 160px;
+}
+
+div.navbar-end a{
+    margin-right: 15px;
+}
+
+div.navbar-end a:hover{
+    background-color: #C83230;
+    color: white;
+    cursor:pointer;
+}
+
+.card{
+    background-color: rgba(0,0,0,0.4);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#home button{
+    font-size: 18px;
+}
+
+#home button:hover{
+    background-color: #C83230;
+    color: white;
+}
+
+#home button a{
+    color: inherit;
+}
+
+div.card-content p.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    
-}
-
-body {
-    text-align: center;
-    background-color: #FDA871;
-    
-}
-
-h1, h2, h3{
-    color:blanchedalmond;
-    font-family:'Open Sans', sans-serif; 
-}
-
-.listas{
-    
-    padding: 0px; 
-    line-height: 30px;
-}
-
-.button{
-    color:  #FDA871;
-    background-color: black;
-    padding: 10px; 
-    border-radius: 6px;
+    color:white;
     font-weight: 600;
-    line-height: 50px;
-    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
 }
 
-#sobre{
-    font-family:  sans-serif;
-    text-align: justify;
-    margin: 18px;
-    font-size: 15px;
+#sobre .h-content{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
 }
 
-.destaque{
-    font-family:  sans-serif;
-    font-size: 15px
+#sobre .p-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: auto;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+
+
+.box{
+    background-color: rgb(250, 250, 250);
+}
+
+.is-parent {
+    display: flex;
+    justify-content: center;
 
 }
 
-.n_destaque{
-    font-family: sans-serif;
-    font-size: 13px;
 
+.is-parent article{
+    min-width: 20px;
+    min-height: 300px;
+    max-width: 400px;
+    max-height: 550px;
+    text-align: center;
+
+}
+
+.container-depoi{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;  
+}
+
+
+.img-depoi{
+    border-radius: 50%;
+}
+
+
+
+#compre .h-content{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+#compre .p-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: auto;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:60px;
+}
+
+#compre .p-content p.content1{
+    border: 6px dashed white;
+    max-width: 400px;
+    max-height: 500px; 
+    margin-bottom: 0px;
+}
+
+
+#compre .p-content p.content2{
+    max-width: 400px;
+    max-height: 500px; 
+    margin-bottom: 0px;
+    font-size:30px;
+}
+
+#compre .p-content img{
+    width: 50%;  
+    max-width: 600px;
+    border-radius: 28%;
+}
+
+#compre .p-content button{
+    font-size: 24px;
+    display: flex;
+    align-self: center;
+}
+
+#compre .p-content button:hover{
+    background-color: #C83230;
+    color: white;
+}
+
+#compre .p-content button a{
+    color: inherit;
+}
+
+#compre {
+   background-color: #EDC995;
+}
+
+
+#doe{
+    padding-bottom: 0px;
+}
+
+#doe .content{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+#doe .h-content{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+#doe .p-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    margin-top: auto;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:40px;
+}
+
+
+
+#doe .p-content #texto-doar{
+    border: 6px dashed #EDC995;
+    max-width: 400px;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 50px;
+}
+
+
+#doe .content p.content2{
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+
+
+#image-doe-apple{
+    max-width: 350px;  
+    opacity: 0.8;
+    border-radius: 40%; 
+}
+
+#image-doe-apple:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.p-content #img{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    max-width: 300px;
+    width: 40%; 
+    min-width: 200px;
+    margin-right: 120px;
+    margin-left: 120px;
+
+}
+
+.footer{
+    display: flex;   
+    font-size: 60%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #363530;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    
+}
+
+.footer-1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px; 
+    margin-right: 120px;
+    margin-left: 120px;
+    max-width: 300px;
+    width: 40%; 
+    min-width: 200px;
+   
+}
+
+.footer #image-logo{
+    max-width: 300px; 
+    margin-bottom: 10px;
+}
+
+#footer-logo{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 400px;
+    margin-right: 6%;
+    margin-left: 6%;
+    font-size: 12px;
+}
+
+.contact{
+    opacity: 0.8;
+}
+
+.contact:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#contato{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 120px; 
 }
